@@ -7,9 +7,11 @@ echo ".venv/" >> .gitignore
 echo "activate" >> .gitignore
 deactivate
 
+echo "Ready to proceed..."
+
 # git init
 sleep 2s
 git add . && git commit -m "initial commit"
-
-echo "Ready to proceed..."
+git switch -c dev
+git log -1
 
